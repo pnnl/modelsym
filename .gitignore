@@ -1,0 +1,4 @@
+*.pyc
+*.out
+**/__pycache__/
+# !plots

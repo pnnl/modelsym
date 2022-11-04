@@ -1,0 +1,3 @@
+[submodule "model_symmetries/ct"]
+	path = model_symmetries/ct
+	url = https://github.com/SHI-Labs/Compact-Transformers.git
