@@ -1,17 +1,17 @@
 Code to run the experiments of the Neurips 2022 paper [On the Symmetries of Deep
 Learning Models and their Internal
-Representations](https://arxiv.org/abs/2205.14258). 
+Representations](https://arxiv.org/abs/2205.14258).
 
 # Overview
 
-This repository is currently organized into a module `model_symmetries` with 
+This repository is currently organized into a module `model_symmetries` with
 submodules `stitching` and `alignment`, corresponding to sections 4 and 5 of
 the paper (for the network dissection results of section 6 we used the
 implementation at
-[https://github.com/CSAILVision/NetDissect-Lite](https://github.com/CSAILVision/NetDissect-Lite)). 
+[https://github.com/CSAILVision/NetDissect-Lite](https://github.com/CSAILVision/NetDissect-Lite)).
 
 In addition there are some submodules containing code shared across `stitching`
-and `alignment`, namely 
+and `alignment`, namely
 - `models.py,` `datasets.py`, `train.py` and `plotting.py` (self explanatory)
 - `zoo.py`: utilities to train a bunch of models from independent random seeds
 - `constants.py`: specify a directory in which to store data/models/results by
@@ -39,17 +39,17 @@ In order to run the experiments stitching Compact Convolutional Transformers,
 you will need
 [https://github.com/SHI-Labs/Compact-Transformers](https://github.com/SHI-Labs/Compact-Transformers),
 which is included as a Git submodule of this repository at
-`model_symmetries/ct`. To initialize and update it, run 
+`model_symmetries/ct`. To initialize and update it, run
 ``` bash
 git submodule init && git submodule update
 ```
 
-## `alignment` 
+## `alignment`
 
 Core functions are located in `alignment.py`. The $G_{\mathrm{ReLU}}$-Procrustes
 and CKA metrics are `wreath_{procrustes,cka}` (the group $G_{\mathrm{ReLU}}$ is
 an example of a [wreath product](https://en.wikipedia.org/wiki/Wreath_product),
-hence the name). 
+hence the name).
 
 ## Visualization
 
